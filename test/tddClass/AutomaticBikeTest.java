@@ -72,7 +72,7 @@ public class AutomaticBikeTest {
     //given
     AutomaticBike bajaj = new AutomaticBike();
     //when
-      bajaj.accelerate();
+      /*bajaj.accelerate();
       bajaj.accelerate();
       bajaj.accelerate();
       bajaj.accelerate();
@@ -94,10 +94,12 @@ public class AutomaticBikeTest {
       bajaj.accelerate();
       bajaj.accelerate();
 
-      bajaj.accelerate();
+      bajaj.accelerate();*/
 
       int velocity = 1;
-      while (velocity <= )
+      while (velocity <= 30 )
+          bajaj.accelerate();
+      velocity = velocity + 2;
 
        //asert
        assertEquals(23,bajaj.getVelocity());
