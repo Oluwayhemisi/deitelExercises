@@ -22,7 +22,7 @@ public class TaxCalculator {
                 System.out.println("the citizen's total tax is: " +totalTax);
             }
 
-            else if (earning > 30000) {
+            else {
                 totalTax = 0.20 * maxEarned;
 
                 System.out.println("the citizen's exceeded tax is:  "+totalTax);

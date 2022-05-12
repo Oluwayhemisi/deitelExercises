@@ -30,8 +30,9 @@ public class MyAccount {
     public int getBalance(String pin) {
         if(pin.equals(this.pin));
         return balance;
-
-
+    }
+    public String getFullName() {
+        return fullName;
     }
 
     public void withdrawal(int amount,String pin) {
@@ -49,4 +50,7 @@ public class MyAccount {
                 Balance: %d
                 """,fullName,ACCOUNT_NUMBER,balance);
     }
+
+
+
 }

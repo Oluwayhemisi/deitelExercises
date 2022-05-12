@@ -1,6 +1,5 @@
-package tddClass;
+package eBanking;
 
-import eBanking.MyAccount;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
