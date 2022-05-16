@@ -3,7 +3,7 @@ package tddClass;
 import org.testng.annotations.Test;
 
 //import org.junit.jupiter.api.Test;
-import personal.Phone;
+import personalWork.Phone;
 
 //import static org.junit.jupiter.api.Assertions.*;
 
