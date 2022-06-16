@@ -27,7 +27,7 @@ public class Entry {
     }
 
     public String getTheDate() {
-        DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("E, dd/MM/yyyy, hh:mm, a");
+        DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("E, dd/MM/yyyy, hh:mm a");
 
         return dateTimeFormatter.format(theDate);
     }

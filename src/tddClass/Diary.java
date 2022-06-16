@@ -83,27 +83,19 @@ public class Diary {
     public String getUserName() {
         return userName;
     }
+
     public void setUserName(String userName){
         this.userName = userName;
     }
 
-    public void viewEntry() {
+    public void editEntry(int indexNumber, Entry entry) {
+        int index = indexNumber - 1;
+        entries.set(index, entry);
         for (int i = 0; i < entries.size(); i++) {
-            Entry entry = entries.get(i);
-            System.out.println(entry.getTheDate() + " | " + entry.getTitle() + " | " + entry.getBody());
+             entry = entries.get(i);
+            }
 
-        }
     }
-
-    public boolean changeUserName(String oldUserName, String newUserName) {
-        boolean valid = this.userName.equals(oldUserName);
-        if (!valid) {
-            System.out.println("Try again!");
-            return false;
-        } else setUserName(newUserName);
-        return true;
-    }
-
     public boolean isLock() {
         return isLocked;
     }
