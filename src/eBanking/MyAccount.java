@@ -38,8 +38,6 @@ public class MyAccount {
     public void withdrawal(int amount,String pin) {
         if (this.pin.equals(pin)) {
             balance -= amount;
-//            if(this.pin != pin){
-//            return 0;
         }
     }
     @Override

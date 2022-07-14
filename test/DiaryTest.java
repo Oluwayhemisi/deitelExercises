@@ -1,4 +1,3 @@
-import Diarypackage.model.DiaryForUsers;
 import Diarypackage.model.User;
 import chapterEight.Entry;
 import org.junit.jupiter.api.BeforeEach;
@@ -103,19 +102,10 @@ public class DiaryTest {
        ArrayList <User> users = new ArrayList<>();
        users.add(user1);
        users.add(user2);
-
-       DiaryForUsers userDiary1 = new DiaryForUsers(user1.getPassword(),user1.getName());
-       DiaryForUsers userDiary2 = new DiaryForUsers(user2.getPassword(),user2.getName());
-
-       user1.setDiary(userDiary1);
-       user1.setDiary(userDiary2);
-
-       Entry entry = userDiary1.createEntry("Hello","I love you");
-       Entry entry2 = userDiary2.createEntry("Food","I love food");
-       diary.addEntry(entry);
-       diary.addEntry(entry2);
-
        assertEquals(2, users.size());
+
+
+
 
 
 

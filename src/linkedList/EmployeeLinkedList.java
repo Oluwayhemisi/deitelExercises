@@ -8,6 +8,7 @@ public class EmployeeLinkedList {
        EmployeeNode node = new EmployeeNode(employee);
        node.setNext(head);
        head = node;
+       
        size++;
     }
     public int getSize(){
@@ -17,7 +18,7 @@ public class EmployeeLinkedList {
         return head == null;
     }
 
-    public EmployeeNode  removeFromFront(){
+    public EmployeeNode removeFromFront(Employee employee){
         if(isEmpty()){
             return null;
         }
@@ -26,4 +27,15 @@ public class EmployeeLinkedList {
         size--;
         return removeNode;
     }
+
+
+
+//    public String getByFirstName(String firstName) {
+////        Employee employee = new EmployeeNode()
+////        return employee.getFirstName();
+//
+//return firstName;
+//
+//
+//    }
 }

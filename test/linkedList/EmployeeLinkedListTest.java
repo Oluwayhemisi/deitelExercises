@@ -31,7 +31,7 @@ class EmployeeLinkedListTest {
 
     @Test
     public void removeEmployee(){
-        Employee employee = new Employee("Sola", "Thompson", 000);
+        Employee employee = new Employee("Shola", "Thompson", 000);
         employeeLinkedList.addToFront(employee);
 
         Employee employee1 = new Employee("Ismail", "Haleema", 111);
@@ -40,8 +40,19 @@ class EmployeeLinkedListTest {
         Employee employee2 = new Employee("Bukola", "Donald", 222);
         employeeLinkedList.addToFront(employee2);
 
-        employeeLinkedList.removeFromFront();
-        assertEquals(2,employeeLinkedList.removeFromFront());
-//        assertEquals(employee.toString(),employeeLinkedList.removeFromFront());
+        employeeLinkedList.removeFromFront(employee2);
+        assertEquals(2,employeeLinkedList.getSize());
+    }
+    @Test
+    public void getEmployeeByFirstName(){
+        Employee employee = new Employee("Shola", "Thompson", 000);
+        employeeLinkedList.addToFront(employee);
+
+        Employee employee1 = new Employee("Ismail", "Haleema", 111);
+        employeeLinkedList.addToFront(employee1);
+
+//        assertEquals(employee,employeeLinkedList.getByFirstName("Shola"));
+//        assertEquals(employee1);
+
     }
 }
