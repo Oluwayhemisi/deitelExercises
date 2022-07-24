@@ -30,9 +30,6 @@ public class CuttingStick {
 
 
 
-    public static void main(String[] args) {
-        int []
-        getTheSmallestNumber()
-    }
+
 
 }
