@@ -18,6 +18,8 @@ public class StreamsPractice {
         SecureRandom secureRandom = new SecureRandom();
         secureRandom.ints(10,1,7).filter(x -> x % 2 == 0).forEach(x -> System.out.println(x));
         String result = secureRandom.ints(20,1,14).mapToObj(String::valueOf).collect(Collectors.joining(" "));
+        int[] array ={1,2,3,4,5};
+        IntStream.of(array).mapToObj(e ->String.valueOf(e)).collect(Collectors.joining(" "));
 
     }
 
