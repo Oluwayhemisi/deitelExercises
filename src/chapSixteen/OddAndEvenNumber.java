@@ -22,12 +22,12 @@ public class OddAndEvenNumber {
         double evenAverage = (list.stream().filter(x -> x % 2 == 0 ).reduce(0,Integer::sum) * 1.0)/evenCount;
 
         double oddAverage = (list.stream().filter(x -> x % 2 == 0 ).reduce(0,Integer::sum) * 1.0)/oddCount;
-
+//
         double average = (list.stream().reduce(0,Integer::sum) * 1.0)/ list.size();
         IntPredicate greaterThan5 = x -> x > 5;
         int[] values = {1,-2,4,5,12,-23,45};
         List<Integer> list1 = IntStream.of(values).filter(greaterThan5).boxed().toList();
-        System.out.println(list1);
+        System.out.println(list1+"greater than 5");
 
         System.out.println("Even count "+ evenCount);
         System.out.println("Odd count "+ oddCount);

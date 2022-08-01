@@ -1,4 +1,4 @@
-package Assignment;
+package HackerRankSolutions;
 
 import java.util.ArrayList;
 import java.util.List;

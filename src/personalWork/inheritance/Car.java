@@ -14,7 +14,7 @@ public class Car extends Vehicle {
         this.wheels = wheels;
         this.gears = gears;
         this.isManual = isManual;
-        this.currentGears = 1;
+        this.currentGears = 0;
     }
 
     public void changeGear(int currentGear){
