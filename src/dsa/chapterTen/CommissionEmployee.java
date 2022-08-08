@@ -1,4 +1,4 @@
-package chapterTen;
+package dsa.chapterTen;
 
 public class CommissionEmployee extends Employee {
     private double commissionRate;

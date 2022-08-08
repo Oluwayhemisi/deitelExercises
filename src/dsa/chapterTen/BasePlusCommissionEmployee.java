@@ -1,4 +1,4 @@
-package chapterTen;
+package dsa.chapterTen;
 
 public class BasePlusCommissionEmployee extends CommissionEmployee {
     private double baseSalary;

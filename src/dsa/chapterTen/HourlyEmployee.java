@@ -1,4 +1,4 @@
-package chapterTen;
+package dsa.chapterTen;
 
 public class HourlyEmployee extends Employee{
     private double wage;

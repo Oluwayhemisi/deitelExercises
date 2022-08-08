@@ -1,4 +1,4 @@
-package chapterTen;
+package dsa.chapterTen;
 
 public abstract class Employee {
     private String firstName;

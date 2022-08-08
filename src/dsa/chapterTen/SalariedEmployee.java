@@ -1,4 +1,4 @@
-package chapterTen;
+package dsa.chapterTen;
 
 public class SalariedEmployee extends Employee {
     private double weeklySalary;
